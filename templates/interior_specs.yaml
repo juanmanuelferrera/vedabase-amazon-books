@@ -1,0 +1,108 @@
+# Vedabase Original Edition - Interior Template Specifications
+# For Amazon KDP 6x9 Print Books
+
+format:
+  trim_size: "6x9"
+  width_inches: 6
+  height_inches: 9
+  bleed: false  # No bleed for text-only interiors
+
+margins:
+  # KDP recommended for 6x9
+  inside_gutter: 0.75  # inches - accounts for binding
+  outside: 0.5         # inches
+  top: 0.75            # inches
+  bottom: 0.75         # inches
+
+typography:
+  body:
+    font: "Garamond"
+    fallback: "Georgia, Times New Roman, serif"
+    size: "11pt"
+    line_height: 1.5
+    text_align: "justify"
+
+  chapter_title:
+    font: "Garamond"
+    size: "24pt"
+    weight: "bold"
+    margin_top: "2in"
+    margin_bottom: "0.5in"
+
+  section_heading:
+    font: "Garamond"
+    size: "14pt"
+    weight: "bold"
+    margin_top: "0.3in"
+    margin_bottom: "0.15in"
+
+  sanskrit_verse:
+    font: "Garamond Italic"
+    size: "10pt"
+    margin: "0.25in"
+    text_align: "center"
+
+  translation:
+    font: "Garamond"
+    size: "11pt"
+    style: "italic"
+    margin_bottom: "0.15in"
+
+  purport:
+    font: "Garamond"
+    size: "11pt"
+    first_line_indent: "0.25in"
+
+page_elements:
+  running_header:
+    enabled: true
+    font_size: "9pt"
+    style: "italic"
+    odd_pages: "Chapter Title"  # right pages
+    even_pages: "Book Title"    # left pages
+
+  page_numbers:
+    position: "bottom center"
+    font_size: "10pt"
+    style: "normal"
+
+  drop_caps:
+    enabled: true
+    size: "3 lines"
+    font: "Garamond"
+
+structure:
+  front_matter:
+    - half_title        # Book title only
+    - blank             # Verso blank
+    - series_page       # List of Vedabase Original Edition books
+    - title_page        # Full title + author
+    - copyright_page    # Copyright, KBI license, publisher note
+    - dedication        # If applicable
+    - table_of_contents
+    - publishers_note   # About original edition
+
+  body:
+    - chapters          # Main content
+
+  back_matter:
+    - glossary          # Sanskrit terms
+    - about_author      # Srila Prabhupada bio
+    - series_info       # Other books in collection
+
+copyright_text: |
+  Published under license from Krishna Books Inc. (KBI),
+  authorized licensee of Bhaktivedanta Book Trust for
+  pre-1978 works of His Divine Grace
+  A.C. Bhaktivedanta Swami Prabhupada.
+
+  This is the original, unrevised edition as published
+  during the author's lifetime.
+
+  Vedabase Original Edition
+  vedabase.bhaktiyoga.es
+
+series_branding:
+  name: "Vedabase Original Edition"
+  tagline: "The words he chose. Unchanged. Unedited."
+  website: "vedabase.bhaktiyoga.es"

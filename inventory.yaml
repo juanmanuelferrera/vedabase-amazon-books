@@ -1,0 +1,234 @@
+# Vedabase Original Edition - Book Inventory
+# Updated: 2026-03-19
+
+series:
+  name: "Vedabase Original Edition"
+  tagline: "The words he chose. Unchanged. Unedited."
+  author: "His Divine Grace A.C. Bhaktivedanta Swami Prabhupada"
+  publisher: "Bhaktivedanta Book Trust (Original Editions)"
+  website: "https://vedabase.bhaktiyoga.es"
+
+categories:
+  major_works:
+    color: "#1a365d"
+    color_name: "Deep Blue"
+    prefix: "MW"
+    books:
+      - id: "MW-1"
+        title: "Bhagavad-gita As It Is"
+        slug: "bhagavad-gita"
+        volumes: 1
+        status: "pending"
+
+      - id: "MW-2"
+        title: "Srimad-Bhagavatam"
+        slug: "srimad-bhagavatam"
+        volumes: 30  # Multiple cantos
+        status: "pending"
+
+      - id: "MW-3"
+        title: "Sri Caitanya-caritamrta"
+        slug: "caitanya-caritamrta"
+        volumes: 17
+        status: "pending"
+
+      - id: "MW-4"
+        title: "Krsna, The Supreme Personality of Godhead"
+        slug: "krsna-book"
+        volumes: 2
+        status: "pending"
+
+  essential_texts:
+    color: "#722f37"
+    color_name: "Burgundy"
+    prefix: "ET"
+    books:
+      - id: "ET-1"
+        title: "The Nectar of Devotion"
+        slug: "nectar-of-devotion"
+        volumes: 1
+        status: "pending"
+
+      - id: "ET-2"
+        title: "The Nectar of Instruction"
+        slug: "nectar-of-instruction"
+        volumes: 1
+        status: "pending"
+
+      - id: "ET-3"
+        title: "Sri Isopanisad"
+        slug: "isopanisad"
+        volumes: 1
+        status: "pending"
+
+      - id: "ET-4"
+        title: "Teachings of Lord Caitanya"
+        slug: "teachings-lord-caitanya"
+        volumes: 1
+        status: "pending"
+
+  teachings:
+    color: "#2d5016"
+    color_name: "Forest Green"
+    prefix: "T"
+    books:
+      - id: "T-1"
+        title: "Teachings of Lord Kapila"
+        slug: "teachings-lord-kapila"
+        volumes: 1
+        status: "pending"
+
+      - id: "T-2"
+        title: "Teachings of Queen Kunti"
+        slug: "teachings-queen-kunti"
+        volumes: 1
+        status: "pending"
+
+      - id: "T-3"
+        title: "Teachings of Prahlada Maharaja"
+        slug: "teachings-prahlada"
+        volumes: 1
+        status: "pending"
+
+      - id: "T-4"
+        title: "The Science of Self-Realization"
+        slug: "science-self-realization"
+        volumes: 1
+        status: "pending"
+
+  introductory:
+    color: "#c65d07"
+    color_name: "Golden Orange"
+    prefix: "I"
+    books:
+      - id: "I-1"
+        title: "Raja-vidya: The King of Knowledge"
+        slug: "raja-vidya"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-2"
+        title: "The Path of Perfection"
+        slug: "path-of-perfection"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-3"
+        title: "Perfect Questions, Perfect Answers"
+        slug: "perfect-questions"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-4"
+        title: "The Perfection of Yoga"
+        slug: "perfection-of-yoga"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-5"
+        title: "Beyond Birth and Death"
+        slug: "beyond-birth-death"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-6"
+        title: "Easy Journey to Other Planets"
+        slug: "easy-journey"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-7"
+        title: "Elevation to Krsna Consciousness"
+        slug: "elevation"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-8"
+        title: "Life Comes from Life"
+        slug: "life-comes-from-life"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-9"
+        title: "Light of the Bhagavata"
+        slug: "light-of-bhagavata"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-10"
+        title: "On the Way to Krsna"
+        slug: "on-the-way"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-11"
+        title: "The Reservoir of Pleasure"
+        slug: "reservoir-of-pleasure"
+        volumes: 1
+        status: "pending"
+
+      - id: "I-12"
+        title: "Topmost Yoga System"
+        slug: "topmost-yoga"
+        volumes: 1
+        status: "pending"
+
+  lectures_conversations:
+    color: "#4a1a6b"
+    color_name: "Purple"
+    prefix: "LC"
+    books:
+      - id: "LC-1"
+        title: "Lectures Part 1"
+        slug: "lectures-1"
+        volumes: 1
+        status: "pending"
+
+      - id: "LC-2"
+        title: "Lectures Part 2"
+        slug: "lectures-2"
+        volumes: 1
+        status: "pending"
+
+      - id: "LC-3"
+        title: "Conversations"
+        slug: "conversations"
+        volumes: 1
+        status: "pending"
+
+      - id: "LC-4"
+        title: "Letters"
+        slug: "letters"
+        volumes: 1
+        status: "pending"
+
+marketing:
+  keywords:
+    - "original bhagavad gita prabhupada"
+    - "vedic wisdom unedited"
+    - "krishna consciousness original"
+    - "hare krishna philosophy authentic"
+    - "spiritual classics india"
+    - "meditation yoga scripture"
+    - "bhakti yoga teachings"
+
+  amazon_categories:
+    - "Religion & Spirituality > Hinduism > Sacred Writings"
+    - "Religion & Spirituality > Other Eastern Religions"
+    - "Philosophy > Eastern > Buddhism & Hinduism"
+
+specs:
+  print:
+    trim_width: 6
+    trim_height: 9
+    margin_inside: 0.75
+    margin_outside: 0.5
+    margin_top: 0.75
+    margin_bottom: 0.75
+    font_body: "Garamond"
+    font_size: 11
+
+  epub:
+    format: "EPUB 3.0"
+    toc: true
+    cover_required: true

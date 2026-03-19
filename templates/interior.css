@@ -1,0 +1,502 @@
+/* Vedabase Original Edition - Interior CSS Template
+   For ePub and PDF generation
+   6x9 format optimized */
+
+/* ============================================
+   PAGE SETUP (for print CSS / PDF)
+   ============================================ */
+@page {
+  size: 6in 9in;
+  margin-top: 0.75in;
+  margin-bottom: 0.75in;
+  margin-outside: 0.5in;
+  margin-inside: 0.75in;
+}
+
+@page :left {
+  margin-left: 0.75in;
+  margin-right: 0.5in;
+  @top-left {
+    content: string(book-title);
+    font-style: italic;
+    font-size: 9pt;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-size: 10pt;
+  }
+}
+
+@page :right {
+  margin-left: 0.5in;
+  margin-right: 0.75in;
+  @top-right {
+    content: string(chapter-title);
+    font-style: italic;
+    font-size: 9pt;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-size: 10pt;
+  }
+}
+
+@page :first {
+  @top-left { content: none; }
+  @top-right { content: none; }
+}
+
+/* No headers on blank pages */
+@page :blank {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-center { content: none; }
+}
+
+/* No headers on front matter pages */
+@page frontmatter {
+  @top-left { content: none; }
+  @top-right { content: none; }
+  @bottom-center { content: none; }
+}
+
+.half-title, .series-page, .title-page, .copyright-page, .toc, .publishers-note {
+  page: frontmatter;
+}
+
+/* No headers on back matter pages */
+@page backmatter {
+  @top-left { content: none; }
+  @top-right { content: none; }
+}
+
+.glossary, .about-author, .series-info {
+  page: backmatter;
+}
+
+/* ============================================
+   BASE TYPOGRAPHY
+   ============================================ */
+body {
+  font-family: "EB Garamond", "Garamond", "Georgia", "Times New Roman", serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  text-align: justify;
+  hyphens: auto;
+  color: #1a1a1a;
+}
+
+/* ============================================
+   FRONT MATTER
+   ============================================ */
+.half-title {
+  page-break-before: right;
+  text-align: center;
+  padding-top: 3in;
+}
+
+.half-title h1 {
+  font-size: 24pt;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.series-page {
+  page-break-before: left;
+  text-align: center;
+  padding-top: 0.75in;
+}
+
+.series-page h2 {
+  font-size: 12pt;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5in;
+}
+
+.series-page ul {
+  list-style: none;
+  padding: 0;
+  font-size: 9pt;
+  line-height: 1.6;
+}
+
+.title-page {
+  page-break-before: right;
+  page-break-inside: avoid;
+  text-align: center;
+  padding-top: 2in;
+}
+
+.title-page h1 {
+  font-size: 32pt;
+  font-weight: normal;
+  margin-bottom: 0.3in;
+  letter-spacing: 0.02em;
+  font-variant: small-caps;
+}
+
+.title-page .subtitle {
+  font-size: 14pt;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 1in;
+}
+
+.title-page .author-prefix {
+  font-size: 11pt;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.02in;
+}
+
+.title-page .author {
+  font-size: 14pt;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.title-page .author-title {
+  font-size: 18pt;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  margin-top: 0;
+  margin-bottom: 1in;
+}
+
+.title-page .publisher {
+  text-align: center;
+  font-size: 9pt;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.copyright-page {
+  page-break-before: left;
+  font-size: 8pt;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 0.75in;
+}
+
+.copyright-page p {
+  margin: 0.15em 0;
+  text-align: left;
+}
+
+.copyright-top {
+  margin-bottom: 1em;
+}
+
+.copyright-top .cp-title {
+  font-style: italic;
+}
+
+.copyright-top .cp-subtitle {
+  font-style: italic;
+}
+
+.copyright-middle {
+  margin-bottom: 1em;
+}
+
+.copyright-bottom .cp-spacer {
+  height: 0.5em;
+}
+
+.copyright-bottom .cp-publisher {
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  margin-top: 1em;
+}
+
+.copyright-bottom .cp-website {
+  letter-spacing: 0.03em;
+}
+
+/* ============================================
+   TABLE OF CONTENTS
+   ============================================ */
+.toc {
+  page-break-before: right;
+}
+
+.toc h2 {
+  text-align: center;
+  font-size: 18pt;
+  margin-bottom: 1in;
+  letter-spacing: 0.1em;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  border-bottom: 1px dotted #ccc;
+  padding-bottom: 0.25em;
+}
+
+.toc .chapter-num {
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+
+.toc .page-num {
+  font-weight: normal;
+}
+
+/* ============================================
+   PUBLISHER'S NOTE
+   ============================================ */
+.publishers-note {
+  page-break-before: right;
+}
+
+.publishers-note h2 {
+  text-align: center;
+  font-size: 14pt;
+  margin-bottom: 0.5in;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.publishers-note p {
+  text-indent: 0.25in;
+  margin-bottom: 0.5em;
+}
+
+.publishers-note p:first-of-type {
+  text-indent: 0;
+}
+
+.publishers-note .highlight {
+  font-weight: bold;
+}
+
+/* ============================================
+   CHAPTERS
+   ============================================ */
+@page chapter-start {
+  @top-left { content: none; }
+  @top-right { content: none; }
+}
+
+.chapter {
+  page-break-before: right;
+  page: chapter-start;
+}
+
+.chapter-header {
+  text-align: center;
+  margin-top: 2in;
+  margin-bottom: 1in;
+  string-set: chapter-title attr(data-title);
+}
+
+.chapter-number {
+  font-size: 12pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 0.5in;
+  color: #666;
+}
+
+.chapter-title {
+  font-size: 24pt;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.chapter-subtitle {
+  font-size: 14pt;
+  font-style: italic;
+  margin-top: 0.25in;
+  color: #444;
+}
+
+/* ============================================
+   VERSE FORMATTING (Sanskrit)
+   ============================================ */
+.verse-block {
+  margin: 1.5em 0;
+  page-break-inside: avoid;
+}
+
+.verse-number {
+  font-weight: bold;
+  font-size: 12pt;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.sanskrit {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 0.75em;
+  font-size: 10pt;
+  line-height: 1.8;
+}
+
+/* Sanskrit verse blocks - tight line spacing, centered */
+.sanskrit-verse {
+  margin: 1em 0;
+  text-align: center;
+  page-break-inside: avoid;
+}
+
+.sanskrit-verse p {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.sanskrit-verse .stanza-break {
+  height: 0.5em;
+}
+
+.synonyms {
+  font-size: 10pt;
+  margin-bottom: 0.75em;
+  text-align: justify;
+}
+
+.synonyms .word {
+  font-style: italic;
+}
+
+.synonyms .meaning {
+  font-style: normal;
+}
+
+.translation {
+  font-style: italic;
+  margin-bottom: 0.75em;
+  text-align: justify;
+  font-size: 11pt;
+}
+
+.purport-header {
+  font-weight: bold;
+  font-size: 10pt;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.purport {
+  text-indent: 0.25in;
+  text-align: justify;
+}
+
+.purport p {
+  margin-bottom: 0.5em;
+}
+
+.purport p:first-child {
+  text-indent: 0;
+}
+
+/* Drop cap for first paragraph */
+.purport p:first-child::first-letter {
+  float: left;
+  font-size: 3.5em;
+  line-height: 0.8;
+  padding-right: 0.1em;
+  margin-top: 0.05em;
+  font-weight: bold;
+  color: #8B4513;
+}
+
+/* ============================================
+   BACK MATTER
+   ============================================ */
+.glossary {
+  page-break-before: right;
+}
+
+.glossary h2 {
+  text-align: center;
+  font-size: 18pt;
+  margin-bottom: 1in;
+}
+
+.glossary-entry {
+  margin-bottom: 0.75em;
+}
+
+.glossary-term {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.about-author {
+  page-break-before: right;
+}
+
+.about-author h2 {
+  text-align: center;
+  font-size: 14pt;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5in;
+}
+
+.about-author p {
+  text-indent: 0.25in;
+  margin-bottom: 0.5em;
+}
+
+.series-info {
+  page-break-before: right;
+  text-align: center;
+}
+
+.series-info h2 {
+  font-size: 14pt;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75in;
+}
+
+.series-info .tagline {
+  font-style: italic;
+  font-size: 12pt;
+  margin-bottom: 1in;
+}
+
+.series-info .website {
+  font-size: 11pt;
+  letter-spacing: 0.05em;
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+.center { text-align: center; }
+.right { text-align: right; }
+.small { font-size: 9pt; }
+.large { font-size: 14pt; }
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+.uppercase { text-transform: uppercase; }
+.no-indent { text-indent: 0; }
+
+.page-break { page-break-after: always; }
+.no-break { page-break-inside: avoid; }
+
+.ornament {
+  text-align: center;
+  font-size: 18pt;
+  margin: 1in 0;
+  color: #8B4513;
+}

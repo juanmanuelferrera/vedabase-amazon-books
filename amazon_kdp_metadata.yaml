@@ -1,0 +1,838 @@
+# Amazon KDP Metadata - Vedabase Original Edition
+# All data needed for manual book creation on Amazon
+
+# ===========================================
+# SERIES INFORMATION (same for all books)
+# ===========================================
+
+series:
+  name: "Vedabase Original Edition"
+  # Do NOT include numbers in series name field
+
+author:
+  name: "A.C. Bhaktivedanta Swami Prabhupada"
+  # Optional: add "His Divine Grace" in subtitle or description
+
+publisher: "Vedabase Original Edition"
+
+# Common categories for all books
+categories:
+  primary: "Religion & Spirituality > Hinduism > Sacred Writings"
+  secondary: "Religion & Spirituality > Other Eastern Religions & Sacred Texts"
+  tertiary: "Philosophy > Eastern"
+
+# Common keywords (use for all books, customize per book)
+base_keywords:
+  - "prabhupada original books"
+  - "hare krishna"
+  - "bhakti yoga"
+  - "vedic wisdom"
+  - "krishna consciousness"
+  - "spiritual classics india"
+
+# ===========================================
+# INTRODUCTORY BOOKS (12)
+# ===========================================
+
+books:
+
+  # -------------------------------------------
+  I-01_raja_vidya:
+    series_number: 1  # Just the digit for KDP
+    title: "Raja-vidya"
+    subtitle: "The King of Knowledge (Vedabase Original Edition)"
+
+    description: |
+      What is the supreme knowledge? Why did Krishna call it "the king of education, the most secret of all secrets"?
+
+      In this powerful introduction to Bhagavad-gita's ninth chapter, Srila Prabhupada unlocks the most confidential wisdom of the Vedas—knowledge that liberates the soul from material bondage.
+
+      ★ ORIGINAL EDITION ★
+      This text is transcribed directly from high-resolution scans of the first edition, published during the author's lifetime. No posthumous editorial changes have been made. Every word appears exactly as Srila Prabhupada approved it.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Part of the Vedabase Original Edition collection.
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "raja vidya prabhupada original"
+      - "bhagavad gita chapter 9"
+      - "krishna consciousness introduction"
+      - "vedic philosophy beginner"
+      - "spiritual knowledge india"
+      - "hare krishna books original"
+      - "prabhupada unchanged books"
+
+    bisac_category: "REL032030"  # Hinduism - Sacred Writings
+
+  # -------------------------------------------
+  I-02_path_of_perfection:
+    series_number: 2
+    title: "The Path of Perfection"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      What is real yoga? Beyond the postures and breathing exercises, what is the actual goal?
+
+      In this illuminating commentary on Bhagavad-gita's sixth chapter, Srila Prabhupada explains the science of dhyana-yoga as Krishna himself taught it—a practical path to spiritual perfection accessible to everyone.
+
+      ★ ORIGINAL EDITION ★
+      This text is transcribed directly from high-resolution scans of the first edition, published during the author's lifetime. No posthumous editorial changes have been made.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Part of the Vedabase Original Edition collection.
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "path of perfection prabhupada"
+      - "bhagavad gita chapter 6 yoga"
+      - "dhyana yoga meditation"
+      - "yoga philosophy original"
+      - "krishna consciousness yoga"
+      - "prabhupada original books"
+      - "spiritual perfection vedic"
+
+  # -------------------------------------------
+  I-03_perfect_questions:
+    series_number: 3
+    title: "Perfect Questions, Perfect Answers"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      "Who am I? Why do I suffer? What happens after death?"
+
+      In 1972, Bob Cohen traveled to India seeking answers to life's deepest questions. He found Srila Prabhupada in a small village and received answers that transformed his life.
+
+      These intimate conversations reveal profound wisdom in simple, accessible language—perfect for anyone seeking genuine spiritual understanding.
+
+      ★ ORIGINAL EDITION ★
+      Transcribed from the first edition. No posthumous changes.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "perfect questions perfect answers prabhupada"
+      - "spiritual questions answers"
+      - "bob cohen prabhupada"
+      - "krishna consciousness beginner"
+      - "vedic philosophy questions"
+      - "prabhupada conversations"
+      - "meaning of life vedic"
+
+  # -------------------------------------------
+  I-04_perfection_of_yoga:
+    series_number: 4
+    title: "The Perfection of Yoga"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Modern yoga has strayed far from its original purpose. Millions practice postures without understanding the goal.
+
+      In this essential guide, Srila Prabhupada cuts through misconceptions to reveal what Krishna actually taught about yoga in Bhagavad-gita—and why bhakti-yoga is declared the highest path.
+
+      ★ ORIGINAL EDITION ★
+      No posthumous editorial changes. Every word as the author approved it.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "perfection of yoga prabhupada"
+      - "bhakti yoga original"
+      - "yoga philosophy authentic"
+      - "krishna yoga teachings"
+      - "hare krishna yoga"
+      - "prabhupada original edition"
+      - "vedic yoga truth"
+
+  # -------------------------------------------
+  I-05_beyond_birth_death:
+    series_number: 5
+    title: "Beyond Birth and Death"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Death is the one appointment no one can escape. Yet most live unprepared, avoiding the question.
+
+      What happens when we die? Is there life after death? Can we prepare for the transition?
+
+      Srila Prabhupada illuminates the Vedic science of the soul's journey—knowledge that liberates us from the fear of death and transforms how we live.
+
+      ★ ORIGINAL EDITION ★
+      First edition text. No posthumous changes.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "beyond birth death prabhupada"
+      - "life after death vedic"
+      - "reincarnation hinduism"
+      - "soul transmigration"
+      - "death vedic philosophy"
+      - "prabhupada original books"
+      - "what happens after death"
+
+  # -------------------------------------------
+  I-06_easy_journey:
+    series_number: 6
+    title: "Easy Journey to Other Planets"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Long before modern science speculated about extraterrestrial life, the Vedic literature described the inhabitants and conditions of other planets in detail.
+
+      Can we travel to other worlds? Not by rockets—but by consciousness. Srila Prabhupada explains the science of interplanetary travel as revealed in the Vedas.
+
+      ★ ORIGINAL EDITION ★
+      Transcribed from first edition scans. Unaltered.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "easy journey other planets prabhupada"
+      - "vedic cosmology"
+      - "other planets hinduism"
+      - "spiritual planets"
+      - "antimaterial world"
+      - "prabhupada original edition"
+      - "vedic science cosmos"
+
+  # -------------------------------------------
+  I-07_elevation:
+    series_number: 7
+    title: "Elevation to Krsna Consciousness"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      How does one begin the spiritual journey? What are the first practical steps?
+
+      Srila Prabhupada provides a clear, encouraging guide for anyone seeking to elevate their consciousness above the mundane platform and taste the happiness of spiritual awareness.
+
+      An ideal starting point for newcomers to Vedic philosophy.
+
+      ★ ORIGINAL EDITION ★
+      First edition text preserved exactly.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "elevation krishna consciousness"
+      - "begin spiritual life"
+      - "krishna consciousness beginner"
+      - "prabhupada introduction"
+      - "spiritual elevation vedic"
+      - "hare krishna start"
+      - "consciousness elevation"
+
+  # -------------------------------------------
+  I-08_life_comes_from_life:
+    series_number: 8
+    title: "Life Comes from Life"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Does life arise from matter? Can chemicals produce consciousness?
+
+      In these provocative morning walks with his disciples, Srila Prabhupada challenges the assumptions of materialistic science and presents the Vedic conclusion: life comes from life, consciousness from consciousness.
+
+      A thought-provoking dialogue between ancient wisdom and modern science.
+
+      ★ ORIGINAL EDITION ★
+      Original conversations preserved.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "life comes from life prabhupada"
+      - "vedic science evolution"
+      - "consciousness origin"
+      - "prabhupada science"
+      - "soul vs matter"
+      - "vedic biology"
+      - "origin of life vedic"
+
+  # -------------------------------------------
+  I-09_light_of_bhagavata:
+    series_number: 9
+    title: "Light of the Bhagavata"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Inspired by the beauty of the autumn season, this unique work combines Srila Prabhupada's poetic insights with descriptions of Krishna's pastimes.
+
+      Each verse illuminates the spiritual significance hidden within the natural world—revealing how every phenomenon points toward the divine.
+
+      A meditative journey through nature and transcendence.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "light of bhagavata prabhupada"
+      - "nature spirituality"
+      - "vedic poetry"
+      - "krishna autumn"
+      - "bhagavata purana poetry"
+      - "prabhupada original"
+      - "spiritual nature vedic"
+
+  # -------------------------------------------
+  I-10_on_the_way:
+    series_number: 10
+    title: "On the Way to Krsna"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      For those beginning to explore spiritual life, this gentle introduction offers encouragement and clarity.
+
+      Srila Prabhupada explains the basic principles of Krishna consciousness in a way that is both profound and accessible—perfect for curious seekers taking their first steps.
+
+      ★ ORIGINAL EDITION ★
+      First edition preserved.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "on the way to krishna prabhupada"
+      - "krishna consciousness introduction"
+      - "spiritual beginner guide"
+      - "prabhupada for beginners"
+      - "vedic philosophy intro"
+      - "hare krishna basics"
+      - "start krishna consciousness"
+
+  # -------------------------------------------
+  I-11_reservoir_of_pleasure:
+    series_number: 11
+    title: "The Reservoir of Pleasure"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Where can we find real pleasure—the kind that doesn't fade or disappoint?
+
+      Srila Prabhupada reveals that Krishna is the reservoir of all pleasure, and that connecting with Him is the key to experiencing lasting satisfaction. A short but powerful meditation on the source of true happiness.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "reservoir of pleasure prabhupada"
+      - "krishna pleasure"
+      - "happiness spirituality"
+      - "ananda bliss vedic"
+      - "joy krishna consciousness"
+      - "prabhupada original edition"
+      - "real happiness vedic"
+
+  # -------------------------------------------
+  I-12_topmost_yoga:
+    series_number: 12
+    title: "Topmost Yoga System"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Among all yoga systems, which is the highest? Which path leads most directly to the goal?
+
+      In this concise guide, Srila Prabhupada explains why bhakti-yoga—the yoga of devotion—is declared by Krishna to be the topmost spiritual process, accessible to everyone in this age.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "topmost yoga system prabhupada"
+      - "bhakti yoga best"
+      - "yoga systems compared"
+      - "highest yoga path"
+      - "krishna yoga supreme"
+      - "prabhupada yoga"
+      - "best yoga vedic"
+
+# ===========================================
+# ESSENTIAL TEXTS (4)
+# ===========================================
+
+  # -------------------------------------------
+  ET-01_nectar_of_devotion:
+    series_number: 13
+    title: "The Nectar of Devotion"
+    subtitle: "The Complete Science of Bhakti-yoga (Vedabase Original Edition)"
+
+    description: |
+      The complete science of bhakti-yoga—the yoga of devotion—presented in systematic detail.
+
+      Based on Rupa Goswami's classic Bhakti-rasamrta-sindhu, Srila Prabhupada reveals the stages of devotional service, from the first steps to the highest perfection of pure love for Krishna.
+
+      A comprehensive manual for serious spiritual practitioners.
+
+      ★ ORIGINAL EDITION ★
+      This text is transcribed from high-resolution scans of the first edition. No posthumous editorial changes have been made.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "nectar of devotion prabhupada original"
+      - "bhakti rasamrita sindhu"
+      - "rupa goswami"
+      - "bhakti yoga complete"
+      - "devotional service stages"
+      - "prabhupada original books"
+      - "science of devotion"
+
+  # -------------------------------------------
+  ET-02_nectar_of_instruction:
+    series_number: 14
+    title: "The Nectar of Instruction"
+    subtitle: "Sri Upadesamrta (Vedabase Original Edition)"
+
+    description: |
+      In just eleven verses, Rupa Goswami condensed the essence of all spiritual instruction.
+
+      Srila Prabhupada's commentary on the Upadesamrta reveals practical guidance for daily spiritual life: how to control the mind and senses, how to associate with devotees, and how to advance steadily toward the ultimate goal.
+
+      Essential reading for every serious practitioner.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "nectar of instruction prabhupada"
+      - "upadesamrta"
+      - "rupa goswami teachings"
+      - "spiritual instruction"
+      - "devotee association"
+      - "prabhupada original edition"
+      - "six goswamis"
+
+  # -------------------------------------------
+  ET-03_isopanisad:
+    series_number: 15
+    title: "Sri Isopanisad"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      The Isopanisad stands first among the Upanisads—the philosophical essence of the Vedas.
+
+      In just eighteen mantras, it reveals the relationship between God, the soul, and the material world. Srila Prabhupada's illuminating purports make this ancient wisdom accessible to modern readers.
+
+      A foundational text for understanding Vedic philosophy.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "isopanisad prabhupada original"
+      - "isha upanishad"
+      - "upanishads english"
+      - "vedic philosophy"
+      - "vedanta introduction"
+      - "prabhupada original books"
+      - "upanishad commentary"
+
+  # -------------------------------------------
+  ET-04_teachings_lord_caitanya:
+    series_number: 16
+    title: "Teachings of Lord Caitanya"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Five hundred years ago, Lord Caitanya Mahaprabhu appeared in India to teach the highest spiritual process for this age: the chanting of the holy names of God.
+
+      This comprehensive summary of His teachings explains the philosophy of acintya-bhedabheda-tattva and reveals the ultimate goal of pure love for Krishna.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "teachings lord caitanya prabhupada"
+      - "chaitanya mahaprabhu"
+      - "gaudiya vaishnavism"
+      - "hare krishna philosophy"
+      - "acintya bhedabheda"
+      - "prabhupada original"
+      - "bengali saint krishna"
+
+# ===========================================
+# TEACHINGS SERIES (4)
+# ===========================================
+
+  # -------------------------------------------
+  T-01_teachings_lord_kapila:
+    series_number: 17
+    title: "Teachings of Lord Kapila"
+    subtitle: "The Son of Devahuti (Vedabase Original Edition)"
+
+    description: |
+      Lord Kapila, an incarnation of Krishna, appeared as the son of Devahuti to teach the science of sankhya-yoga—analytical understanding of spirit and matter.
+
+      Srila Prabhupada's commentary on these teachings from Srimad-Bhagavatam reveals the nature of the soul, the workings of material nature, and the path to liberation.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "teachings lord kapila prabhupada"
+      - "sankhya yoga"
+      - "devahuti son"
+      - "kapila avatar"
+      - "srimad bhagavatam teachings"
+      - "prabhupada original"
+      - "vedic cosmology soul"
+
+  # -------------------------------------------
+  T-02_teachings_queen_kunti:
+    series_number: 18
+    title: "Teachings of Queen Kunti"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Queen Kunti, mother of the Pandavas, was one of the greatest devotees in history. Her prayers to Lord Krishna reveal the heart of pure devotion.
+
+      Srila Prabhupada's commentary illuminates the depth of her surrender and the profound philosophy hidden in her seemingly simple words.
+
+      A meditation on devotional surrender.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "teachings queen kunti prabhupada"
+      - "kunti prayers"
+      - "devotional surrender"
+      - "pandavas mother"
+      - "bhagavatam prayers"
+      - "prabhupada original edition"
+      - "pure devotion"
+
+  # -------------------------------------------
+  T-03_teachings_prahlada:
+    series_number: 19
+    title: "Teachings of Prahlada Maharaja"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      The five-year-old Prahlada Maharaja faced torture and death from his demoniac father—yet his devotion to Lord Vishnu never wavered.
+
+      His teachings to his classmates reveal the essence of devotional service and the power of unshakeable faith. A story of courage that has inspired devotees for millennia.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "prahlada maharaja prabhupada"
+      - "hiranyakashipu"
+      - "narasimha"
+      - "devotee child"
+      - "faith courage"
+      - "prabhupada original"
+      - "bhagavatam seventh canto"
+
+  # -------------------------------------------
+  T-04_science_self_realization:
+    series_number: 20
+    title: "The Science of Self-Realization"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      A collection of Srila Prabhupada's articles, lectures, and interviews that present Krishna consciousness to the modern world.
+
+      Topics include the purpose of human life, reincarnation, the nature of the self, and the science of mantra meditation. An ideal introduction for thoughtful seekers.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "science self realization prabhupada"
+      - "self realization vedic"
+      - "who am I spiritual"
+      - "mantra meditation science"
+      - "prabhupada interviews"
+      - "krishna consciousness introduction"
+      - "prabhupada original books"
+
+# ===========================================
+# MAJOR WORKS (4)
+# ===========================================
+
+  # -------------------------------------------
+  MW-01_bhagavad_gita:
+    series_number: 21
+    title: "Bhagavad-gita As It Is"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      The Bhagavad-gita is the most widely read theistic science in the world. In it, Lord Krishna reveals the eternal truths of the soul, karma, yoga, and devotion.
+
+      This is the original 1972 Macmillan edition—the text Srila Prabhupada personally approved, before any posthumous changes were introduced.
+
+      ★ ORIGINAL EDITION ★
+      Transcribed from high-resolution scans of the first Macmillan printing. Complete with original Sanskrit verses, transliterations, word-for-word translations, and purports.
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "bhagavad gita prabhupada original 1972"
+      - "bhagavad gita as it is macmillan"
+      - "gita unchanged edition"
+      - "krishna arjuna dialogue"
+      - "prabhupada original books"
+      - "vedic scripture english"
+      - "hindu holy book original"
+
+  # -------------------------------------------
+  MW-02_srimad_bhagavatam:
+    series_number: 22
+    title: "Srimad-Bhagavatam"
+    subtitle: "Bhagavata Purana (Vedabase Original Edition)"
+
+    description: |
+      The Srimad-Bhagavatam is the ripened fruit of all Vedic literature—the complete science of God covering creation, philosophy, and the transcendental pastimes of Lord Krishna.
+
+      Srila Prabhupada dedicated his life to translating and commenting on this masterwork. This collection presents his original translations, preserved exactly as published during his lifetime.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "srimad bhagavatam prabhupada original"
+      - "bhagavata purana english"
+      - "vedic literature complete"
+      - "krishna pastimes"
+      - "prabhupada original translation"
+      - "hindu scripture"
+      - "puranas english"
+
+  # -------------------------------------------
+  MW-03_caitanya_caritamrta:
+    series_number: 23
+    title: "Sri Caitanya-caritamrta"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      The biography and teachings of Lord Caitanya Mahaprabhu, written by Krishnadasa Kaviraja Goswami in the 16th century.
+
+      Srila Prabhupada's translation and commentary reveals the confidential philosophy of divine love taught by Lord Caitanya—the golden avatar who appeared to teach the chanting of the holy names.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "caitanya caritamrta prabhupada original"
+      - "chaitanya mahaprabhu biography"
+      - "krishnadasa kaviraja"
+      - "gaudiya vaishnava"
+      - "hare krishna movement history"
+      - "prabhupada original books"
+      - "bengali vaishnava"
+
+  # -------------------------------------------
+  MW-04_krsna_book:
+    series_number: 24
+    title: "Krsna"
+    subtitle: "The Supreme Personality of Godhead (Vedabase Original Edition)"
+
+    description: |
+      The story of Krishna's earthly pastimes—His childhood in Vrindavana, His adventures with the cowherd boys, His loving exchanges with the gopis, and His activities as king of Dvaraka.
+
+      Based on the Tenth Canto of Srimad-Bhagavatam, this narrative brings Krishna's transcendental pastimes to life for the modern reader.
+
+      ★ ORIGINAL EDITION ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "krsna book prabhupada original"
+      - "krishna vrindavan"
+      - "krishna pastimes"
+      - "tenth canto bhagavatam"
+      - "gopis krishna"
+      - "prabhupada original edition"
+      - "krishna story"
+
+# ===========================================
+# LECTURES & CONVERSATIONS (4)
+# ===========================================
+
+  # -------------------------------------------
+  LC-01_lectures_1:
+    series_number: 25
+    title: "Lectures"
+    subtitle: "Part One (Vedabase Original Edition)"
+
+    description: |
+      Srila Prabhupada's spoken words, transcribed from recordings of his lectures on Bhagavad-gita, Srimad-Bhagavatam, and other scriptures.
+
+      These talks capture the living transmission of Vedic knowledge—spontaneous, direct, and filled with the power of a realized soul speaking truth.
+
+      ★ ORIGINAL TRANSCRIPTIONS ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "prabhupada lectures original"
+      - "prabhupada talks"
+      - "bhagavatam class"
+      - "gita lecture"
+      - "prabhupada teaching"
+      - "hare krishna lectures"
+      - "vedic wisdom spoken"
+
+  # -------------------------------------------
+  LC-02_lectures_2:
+    series_number: 26
+    title: "Lectures"
+    subtitle: "Part Two (Vedabase Original Edition)"
+
+    description: |
+      Continuation of Srila Prabhupada's transcribed lectures on Vedic scriptures and spiritual topics.
+
+      Each lecture is a meditation in itself—revealing new dimensions of understanding with each reading.
+
+      ★ ORIGINAL TRANSCRIPTIONS ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "prabhupada lectures volume 2"
+      - "prabhupada talks transcribed"
+      - "iskcon lectures"
+      - "spiritual discourse"
+      - "vedic philosophy talks"
+      - "prabhupada original"
+      - "bhakti yoga lectures"
+
+  # -------------------------------------------
+  LC-03_conversations:
+    series_number: 27
+    title: "Conversations"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Srila Prabhupada's conversations with disciples, guests, scientists, politicians, and seekers from all walks of life.
+
+      These informal exchanges reveal his personality, humor, wisdom, and the practical application of Krishna consciousness to every aspect of life.
+
+      ★ ORIGINAL TRANSCRIPTIONS ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "prabhupada conversations"
+      - "prabhupada room conversations"
+      - "prabhupada morning walks"
+      - "prabhupada dialogues"
+      - "spiritual teacher conversations"
+      - "prabhupada original"
+      - "guru disciple dialogue"
+
+  # -------------------------------------------
+  LC-04_letters:
+    series_number: 28
+    title: "Letters"
+    subtitle: "Vedabase Original Edition"
+
+    description: |
+      Srila Prabhupada wrote thousands of letters to his disciples around the world, guiding them in spiritual life and the development of the Krishna consciousness movement.
+
+      These personal communications reveal his care, his vision, and his practical instructions for applying Vedic wisdom in the modern world.
+
+      ★ ORIGINAL LETTERS ★
+
+      "The words he chose. Unchanged. Unedited."
+
+      Source: vedabase.bhaktiyoga.es
+
+    keywords:
+      - "prabhupada letters"
+      - "prabhupada correspondence"
+      - "spiritual master letters"
+      - "guru guidance"
+      - "iskcon history"
+      - "prabhupada original"
+      - "krishna consciousness guidance"
+
+# ===========================================
+# KDP SPECIFICATIONS
+# ===========================================
+
+kdp_specs:
+  trim_size: "6 x 9 in"
+  bleed: "No bleed"
+  paper_type: "Cream"
+  cover_finish: "Matte"
+  print_option: "Black & white interior"
+
+  margins:
+    inside: "0.75 in"
+    outside: "0.5 in"
+    top: "0.75 in"
+    bottom: "0.75 in"
+
+  pricing_suggestion:
+    introductory_books: "$9.99 - $12.99"
+    essential_texts: "$14.99 - $19.99"
+    teachings: "$12.99 - $16.99"
+    major_works: "$19.99 - $29.99"
+    lectures: "$16.99 - $24.99"

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ book_title }}</title>
+  <link rel="stylesheet" href="interior.css">
+  <style>
+    /* Book-specific overrides */
+    body { string-set: book-title "{{ book_title }}"; }
+  </style>
+</head>
+<body>
+
+<!-- HALF TITLE PAGE -->
+<section class="half-title">
+  <h1>{{ book_title }}</h1>
+</section>
+
+<!-- TITLE PAGE -->
+<section class="title-page">
+  <h1>{{ book_title }}</h1>
+  {% if subtitle %}
+  <p class="subtitle">{{ subtitle }}</p>
+  {% endif %}
+  <p class="author-prefix">His Divine Grace</p>
+  <p class="author">A.C. Bhaktivedanta Swami</p>
+  <p class="author-title">Prabhupada</p>
+  <p class="publisher">Vedabase Original Edition</p>
+</section>
+
+<!-- COPYRIGHT PAGE -->
+<section class="copyright-page">
+  <div class="copyright-top">
+    <p class="cp-title">{{ book_title }}</p>
+    {% if subtitle %}
+    <p class="cp-subtitle">{{ subtitle }}</p>
+    {% endif %}
+  </div>
+  <div class="copyright-middle">
+    <p>By His Divine Grace A.C. Bhaktivedanta Swami Prabhupada</p>
+    <p>Founder-Acarya of the International Society for Krishna Consciousness</p>
+  </div>
+  <div class="copyright-bottom">
+    <p>First Edition: {{ first_edition_year }}</p>
+    <p>This Edition: {{ current_year }}</p>
+    <p class="cp-spacer">&nbsp;</p>
+    <p>Original unrevised edition</p>
+    <p>Published under license from Krishna Books Inc.</p>
+    <p class="cp-spacer">&nbsp;</p>
+    <p class="cp-publisher">Vedabase Original Edition</p>
+    <p class="cp-website">vedabase.bhaktiyoga.es</p>
+  </div>
+</section>
+
+<!-- TABLE OF CONTENTS -->
+<section class="toc">
+  <h2>Contents</h2>
+  <ul>
+    {% for chapter in chapters %}
+    <li>
+      <span>
+        {% if chapter.number %}
+        <span class="chapter-num">{{ chapter.number }}.</span>
+        {% endif %}
+        {{ chapter.title }}
+      </span>
+      <span class="page-num">{{ chapter.page }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- PUBLISHER'S NOTE -->
+<section class="publishers-note">
+  <h2>Publisher's Note</h2>
+  <p>This book has been meticulously transcribed from high-resolution scans
+  of the original first edition, published during the author's lifetime.</p>
+  <p>No posthumous editorial changes have been made to this text. What you
+  hold in your hands are the words he chose—unchanged and unedited.</p>
+  <p>Minor typographical corrections have been applied only where clearly
+  erroneous (obvious typos, broken characters). The substance, style, and
+  expression of the original remain intact.</p>
+  <p>For readers familiar with later editions, you may notice differences.
+  These are not errors—they are the original. This is how the book was
+  first presented to the world.</p>
+</section>
+
+<!-- MAIN CONTENT -->
+{% for chapter in content %}
+<section class="chapter" id="chapter-{{ chapter.number }}">
+  <div class="chapter-header" data-title="{{ chapter.title }}">
+    {% if chapter.number %}
+    <p class="chapter-number">Chapter {{ chapter.number }}</p>
+    {% endif %}
+    <h1 class="chapter-title">{{ chapter.title }}</h1>
+    {% if chapter.subtitle %}
+    <p class="chapter-subtitle">{{ chapter.subtitle }}</p>
+    {% endif %}
+  </div>
+
+  {{ chapter.body | safe }}
+</section>
+{% endfor %}
+
+<!-- GLOSSARY -->
+{% if glossary %}
+<section class="glossary">
+  <h2>Glossary</h2>
+  {% for entry in glossary %}
+  <div class="glossary-entry">
+    <span class="glossary-term">{{ entry.term }}</span>—{{ entry.definition }}
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+<!-- ABOUT THE AUTHOR -->
+<section class="about-author">
+  <h2>About the Author</h2>
+  <p>His Divine Grace A.C. Bhaktivedanta Swami Prabhupada appeared in this
+  world in 1896 in Calcutta, India. He first met his spiritual master,
+  Srila Bhaktisiddhanta Sarasvati Gosvami, in Calcutta in 1922.</p>
+  <p>At their first meeting, Srila Bhaktisiddhanta Sarasvati requested
+  Srila Prabhupada to broadcast Vedic knowledge in English. In the years
+  that followed, Srila Prabhupada wrote a commentary on the Bhagavad-gita,
+  assisted the Gaudiya Matha in its work, and in 1944 started Back to Godhead,
+  an English fortnightly magazine.</p>
+  <p>In 1965, at the age of sixty-nine, Srila Prabhupada traveled to New York
+  City aboard a cargo ship. After almost a year of great difficulty, he
+  established the International Society for Krishna Consciousness in July 1966.</p>
+  <p>Before passing away on November 14, 1977, he had guided ISKCON and seen
+  it grow to a worldwide confederation of more than one hundred asramas,
+  schools, temples, institutes, and farm communities.</p>
+</section>
+
+<!-- ALSO BY THIS AUTHOR (back matter) -->
+<section class="series-page">
+  <h2>Also by the Author</h2>
+  <ul>
+    {% for book in series_books %}
+    <li>{{ book }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+</body>
+</html>
