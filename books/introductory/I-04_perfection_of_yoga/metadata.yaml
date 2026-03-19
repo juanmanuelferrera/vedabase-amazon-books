@@ -5,3 +5,6 @@ price_tier: XS
 series_id: I-04
 subtitle: null
 title: The Perfection of Yoga
+cover_image: "../../../covers/originals/poy_cover-01.jpg"
+cover_resolution: "1293x2087"
+cover_status: "needs_upscale"
