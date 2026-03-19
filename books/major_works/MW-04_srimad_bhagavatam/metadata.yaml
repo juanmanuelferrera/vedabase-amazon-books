@@ -5,9 +5,9 @@ series_id: "MW-04"
 category: "major_works"
 price_tier: "XXL"
 volumes: 30
-cover_image: "../../../covers/originals/sb_1972_cover-001.jpg"
-cover_resolution: "1852x2723"
-cover_status: "needs_upscale"
+cover_image: "../../../covers/upscaled/sb_cover_1875.jpg"
+cover_resolution: "1875x2757"
+cover_status: "kdp_ready"
 description: |
   The ripened fruit of Vedic literature, Srimad-Bhagavatam is the
   complete science of God. Written by Srila Vyasadeva, it covers

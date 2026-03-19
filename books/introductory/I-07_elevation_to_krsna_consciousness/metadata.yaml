@@ -5,6 +5,6 @@ price_tier: S
 series_id: I-07
 subtitle: null
 title: Elevation to Krsna Consciousness
-cover_image: "../../../covers/originals/elevation_cover-001.jpg"
-cover_resolution: "1264x2136"
-cover_status: "needs_upscale"
+cover_image: "../../../covers/upscaled/elevation_cover_1875.jpg"
+cover_resolution: "1875x3169"
+cover_status: "kdp_ready"

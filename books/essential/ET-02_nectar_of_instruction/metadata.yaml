@@ -4,9 +4,9 @@ first_edition_year: "1975"
 series_id: "ET-02"
 category: "essential"
 price_tier: "XS"
-cover_image: "../../../covers/originals/noi_cover-001.jpg"
-cover_resolution: "1418x2111"
-cover_status: "needs_upscale"
+cover_image: "../../../covers/upscaled/noi_cover_1875.jpg"
+cover_resolution: "1875x2791"
+cover_status: "kdp_ready"
 description: |
   Eleven essential verses by Srila Rupa Gosvami with elaborate
   purports by His Divine Grace A.C. Bhaktivedanta Swami Prabhupada.

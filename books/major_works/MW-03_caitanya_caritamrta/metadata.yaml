@@ -5,9 +5,9 @@ series_id: "MW-03"
 category: "major_works"
 price_tier: "XXL"
 volumes: 17
-cover_image: "../../../covers/originals/cc_adi1_cover-001.jpg"
-cover_resolution: "1830x2742"
-cover_status: "needs_upscale"
+cover_image: "../../../covers/upscaled/cc_cover_1875.jpg"
+cover_resolution: "1875x2809"
+cover_status: "kdp_ready"
 description: |
   The authorized biography of Sri Caitanya Mahaprabhu (1486-1534),
   written by Srila Krishnadasa Kaviraja Goswami. This monumental

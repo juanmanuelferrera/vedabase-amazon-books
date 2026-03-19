@@ -3,9 +3,9 @@ subtitle: "The King of Knowledge"
 first_edition_year: "1973"
 series_id: "I-01"
 category: "introductory"
-cover_image: "../../../covers/originals/raja_vidya_cover-001.jpg"
-cover_resolution: "1290x2147"
-cover_status: "needs_upscale"
+cover_image: "../../../covers/upscaled/raja_vidya_cover_1875.jpg"
+cover_resolution: "1875x3121"
+cover_status: "kdp_ready"
 description: |
   In this compact yet profound work, Srila Prabhupada
   reveals the essence of the Bhagavad-gita's ninth chapter,

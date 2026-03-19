@@ -5,6 +5,6 @@ price_tier: S
 series_id: I-06
 subtitle: null
 title: Easy Journey to Other Planets
-cover_image: "../../../covers/originals/easy_journey_cover-01.jpg"
-cover_resolution: "1387x2122"
-cover_status: "needs_upscale"
+cover_image: "../../../covers/upscaled/easy_journey_cover_1875.jpg"
+cover_resolution: "1875x2869"
+cover_status: "kdp_ready"
