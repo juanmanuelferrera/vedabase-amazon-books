@@ -367,12 +367,16 @@ def generate_interior_pdf(book_id, book_path, output_path):
     print(f"HTML saved: {html_path}")
 
     # Generate PDF with WeasyPrint
+    # Load CSS content and inject into HTML to avoid override issues
     css_path = os.path.join(TEMPLATES_DIR, 'interior.css')
+    with open(css_path, 'r', encoding='utf-8') as f:
+        css_content = f.read()
 
-    html = HTML(string=html_content, base_url=TEMPLATES_DIR)
-    css = CSS(filename=css_path)
+    # Inject CSS into HTML before </head>
+    html_with_css = html_content.replace('</head>', f'<style>{css_content}</style></head>')
 
-    html.write_pdf(output_path, stylesheets=[css])
+    html = HTML(string=html_with_css, base_url=TEMPLATES_DIR)
+    html.write_pdf(output_path)
     print(f"PDF generated: {output_path}")
 
     return output_path
