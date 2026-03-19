@@ -22,5 +22,8 @@ Thumbs.db
 *.zip
 *-temp/
 
-# Large files (>50MB) - store elsewhere
+# Large files (>100MB) - GitHub limit
+# PDFs in covers/originals are high-res scans, keep locally
 covers/originals/*.pdf
+books/**/*.pdf
+books/**/*.epub
