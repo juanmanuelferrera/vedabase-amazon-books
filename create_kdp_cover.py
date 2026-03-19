@@ -71,7 +71,7 @@ def load_book_metadata(book_id):
         cat_path = os.path.join(books_dir, category)
         if os.path.isdir(cat_path):
             for book_dir in os.listdir(cat_path):
-                if book_id.lower() in book_dir.lower():
+                if book_dir.lower().startswith(book_id.lower()):
                     meta_path = os.path.join(cat_path, book_dir, 'metadata.yaml')
                     if os.path.exists(meta_path):
                         with open(meta_path, 'r') as f:
