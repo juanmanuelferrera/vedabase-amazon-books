@@ -241,39 +241,75 @@ def load_book_content(book_path):
     # Check for content.md or individual chapter files
     content_file = os.path.join(book_path, 'content.md')
 
+    # Number words for matching "Chapter One", "Chapter Two", etc.
+    number_words = {
+        'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
+        'six': 6, 'seven': 7, 'eight': 8, 'nine': 9, 'ten': 10,
+        'eleven': 11, 'twelve': 12, 'thirteen': 13, 'fourteen': 14,
+        'fifteen': 15, 'sixteen': 16, 'seventeen': 17, 'eighteen': 18,
+        'nineteen': 19, 'twenty': 20, 'introduction': 0
+    }
+
+    def is_chapter_header(line):
+        """Check if line is a chapter header and return (number, title) or None"""
+        line_stripped = line.strip()
+
+        # Pattern 1: "# Chapter X: Title" (markdown H1)
+        if line_stripped.startswith('# ') and not line_stripped.startswith('## '):
+            header = line_stripped[2:].strip()
+            match = re.match(r'Chapter\s+(\d+)[:\s]*(.+)', header, re.IGNORECASE)
+            if match:
+                return (int(match.group(1)), match.group(2).strip())
+            # Just a title without "Chapter X"
+            return (None, header)
+
+        # Pattern 2: "Chapter One", "Chapter Two" etc. (standalone line)
+        match = re.match(r'^Chapter\s+(\w+)$', line_stripped, re.IGNORECASE)
+        if match:
+            word = match.group(1).lower()
+            if word in number_words:
+                return (number_words[word], f"Chapter {match.group(1).title()}")
+            elif word.isdigit():
+                return (int(word), f"Chapter {word}")
+
+        # Pattern 3: "Chapter 1: Title" or "Chapter One: Title"
+        match = re.match(r'^Chapter\s+(\w+)[:\s]+(.+)$', line_stripped, re.IGNORECASE)
+        if match:
+            word = match.group(1).lower()
+            title = match.group(2).strip()
+            if word in number_words:
+                return (number_words[word], title)
+            elif word.isdigit():
+                return (int(word), title)
+
+        # Pattern 4: Skip - TOC entries like "Po P 1:" are not real chapters
+        # Real chapters use "Chapter One" or "# Chapter 1:" format
+
+        return None
+
     if os.path.exists(content_file):
         with open(content_file, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # Split by H1 headers (# Chapter...)
-        # Pattern: lines starting with single # followed by space
         lines = content.split('\n')
         current_chapter = None
         current_body = []
+        chapter_count = 0
 
         for line in lines:
-            # Check if this is a chapter header (# Chapter X: Title)
-            if line.startswith('# ') and not line.startswith('## '):
+            chapter_info = is_chapter_header(line)
+
+            if chapter_info is not None:
                 # Save previous chapter if exists
                 if current_chapter is not None:
                     current_chapter['body'] = markdown_to_html('\n'.join(current_body))
                     chapters.append(current_chapter)
 
-                # Parse the header
-                header = line[2:].strip()  # Remove "# "
-
-                # Try to extract chapter number and title
-                # Pattern: "Chapter 1: Title" or "Chapter 1 Title" or just "Title"
-                match = re.match(r'Chapter\s+(\d+)[:\s]*(.+)', header, re.IGNORECASE)
-                if match:
-                    chapter_num = int(match.group(1))
-                    title = match.group(2).strip()
-                else:
-                    chapter_num = len(chapters) + 1
-                    title = header
+                chapter_num, title = chapter_info
+                chapter_count += 1
 
                 current_chapter = {
-                    'number': chapter_num,
+                    'number': chapter_num if chapter_num is not None else chapter_count,
                     'title': title,
                     'subtitle': None,
                     'body': ''
